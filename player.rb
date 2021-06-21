@@ -8,10 +8,10 @@ class Player
   end
 
   def addScore()
-    @score + 1
+    @score = @score + 1
   end
 
   def loseLife()
-    @life - 1
+    @life = @life - 1
   end
 end
