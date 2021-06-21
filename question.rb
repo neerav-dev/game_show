@@ -1,11 +1,10 @@
 class Question
 
-  attr_reader :answer
+  attr_reader :answer, :num1, :num2
 
-  def askQuestion
-    num1 = rand(1..21)
-    num2 = rand(1..21)
-    puts "What does #{num1} plus #{num2} equal?\n"
+  def generate_question
+    @num1 = rand(1..21)
+    @num2 = rand(1..21)
     @answer = num1 + num2
   end
 
